@@ -1,11 +1,19 @@
 import pytest
 from selenium import webdriver
+from locators.question_page import QuestionPageLocators
 
-
-
-
-
-
+LINK_BASE_PAGE = 'https://qa-scooter.praktikum-services.ru/'
+LINK_YANDEX = 'https://dzen.ru/?yredirect=true'
+WAIT_TIME = 15
+QUASTION_ABOUT_TEXT='Вопросы о важном'
+QUESTIONS_AND_ANSWERS = [[QuestionPageLocators.question_1, QuestionPageLocators.answer_1],
+                         [QuestionPageLocators.question_2, QuestionPageLocators.answer_2],
+                         [QuestionPageLocators.question_3, QuestionPageLocators.answer_3],
+                         [QuestionPageLocators.question_4, QuestionPageLocators.answer_4],
+                         [QuestionPageLocators.question_5, QuestionPageLocators.answer_5],
+                         [QuestionPageLocators.question_6, QuestionPageLocators.answer_6],
+                         [QuestionPageLocators.question_7, QuestionPageLocators.answer_7],
+                         [QuestionPageLocators.question_8, QuestionPageLocators.answer_8]]
 
 
 @pytest.fixture()
