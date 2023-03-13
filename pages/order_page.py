@@ -1,5 +1,5 @@
 import allure
-
+from allure_commons.types import AttachmentType
 from locators.order_page import OrderPageLocators
 from pages.base_page import BasePage
 
@@ -39,6 +39,7 @@ class OrderPage(BasePage):
 
     @allure.step('Проверяем наличие окна с номером заказа')
     def verify_if_order_is_created(self):
+        allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
         return self.find_text(OrderPageLocators.order_number)
 
 
