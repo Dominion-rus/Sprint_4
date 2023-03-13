@@ -17,3 +17,4 @@ _Необходимо наличие FirefoxWebDriver соответствующ
 > https://qa-scooter.praktikum-services.ru/
 ### Содержимое директории tests ###
 - test_question_page.py - тесты на форму "Вопросы о важном"
+- test_order_page.py - Тесты создания заказа
